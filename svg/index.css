@@ -1,0 +1,110 @@
+.chart {
+  position: relative;
+}
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+.circle-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle-chart .outer {
+  stroke: #0d84ce;
+  stroke-dasharray: 534;
+  stroke-dashoffset: 133;
+  animation: show75 2s;
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 133;
+  }
+}
+
+.waves {
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);;
+}
+.waves svg {
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+.bloc {
+  background-color: #0e2439;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hello-svg .path{
+  fill: none;
+  stroke: #362f3c;
+  stroke-width: 18px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#hello-svg .path-1 {
+  stroke-dasharray: 1850;
+  stroke-dashoffset: 1850;
+  transition: 3s linear;
+}
+#hello-svg .path-2 {
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  transition: 0.5s linear 3s;
+}
+#hello-svg .path-3 {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: 0.5s linear 3.5s;
+}
+#hello-svg .path-4 {
+  stroke-width: 0;
+  transition: 0.5s linear 4s;
+}
+
+#hello-svg.write .path-1, #hello-svg.write .path-2, #hello-svg.write .path-3{
+  stroke-dashoffset: 0;
+}
+#hello-svg.write .path-4 {
+  stroke-width: 18px;
+}
