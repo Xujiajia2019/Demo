@@ -6,20 +6,63 @@
   </head>
   <body>
     <div class="container">
-      <h1>Responsive design</h1>
-      <article>
-        <p>If adaptive layouts are a mashup of media queries and fixed-width layouts, responsive web design is a mashup of media queries and liquid layouts. The term was coined by Ethan Marcotte in <a href="https://alistapart.com/article/responsive-web-design/">an article in A List Apart</a> in 2010.</p>
-        <p>Ethan defined three criteria for responsive design:</p>
-       <ol>
-         <li>Fluid grids</li>
-         <li>Fluid media</li>
-         <li>Media queries</li>
-       </ol>
-       <p>If a site was responsive, its layout and images would look good on any device.</p>
-      </article>
-      <aside>
-        <p>This example is using the CSS <code>float</code> property to create columns. That was a popular technique before CSS grid or flexbox existed.</p>
-      </aside>
+      <div class="content-wrap">
+        <h1>Responsive design</h1>
+        <div class="content">
+          <p>If adaptive layouts are a mashup of media queries and fixed-width layouts, responsive web design is a mashup of media queries and liquid layouts. The term was coined by Ethan Marcotte in <a href="https://alistapart.com/article/responsive-web-design/">an article in A List Apart</a> in 2010.</p>
+          <p>Ethan defined three criteria for responsive design:</p>
+         <ol>
+           <li>Fluid grids</li>
+           <li>Fluid media</li>
+           <li>Media queries</li>
+         </ol>
+         <p>If a site was responsive, its layout and images would look good on any device.</p>
+        </div>
+        <aside>
+          <p>This example is using the CSS <code>float</code> property to create columns. That was a popular technique before CSS grid or flexbox existed.</p>
+        </aside>
+      </div>
+      <div class="cards-wrap">
+        <h2>Cards</h2>
+        <div class="cards">
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+          </article>
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+            <p>Actually, that’s not true. This particular card has three paragraphs.</p>
+          </article>
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+          </article>
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+          </article>
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two, no three, paragraphs of text.</p>
+            <p>Notice how all the cards in a row automatically have the same height?</p>
+          </article>
+          <article class="card">
+            <h2>A card</h2>
+            <p>This is a card. There are many like it but this one is mine.</p>
+            <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div style="width: 1px; height: 1px; background: red;">
+    </div>
+    <div style="width: 1px; height: 1px; background: green;">
     </div>
     <script defer src="./index.js"></script>
   </body>
