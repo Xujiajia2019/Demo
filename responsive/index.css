@@ -14,6 +14,7 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
   grid-area: heading;
   margin-bottom: 0;
 }
@@ -68,4 +69,54 @@ aside {
   }
 }
 
+section {
+  margin-block-start: var(--metric-box-spacing);
+  display: flex;
+  flex-direction: row;
+}
 
+h2 {
+  margin-inline-start: 2rem;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  max-width: 3em;
+  text-align: start;
+  margin-inline-end: 1em;
+  margin-inline-start: 2rem;
+}
+
+input {
+  width: 100%;
+  max-width: 16em;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 3px solid #555;
+  margin-inline-end: 2rem;
+}
+
+.richtext {
+  max-width: 600px;
+  margin: auto;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.5em;
+  background: #f3f3f3;
+  border: 1px solid red;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  flex: none;
+  fill: red;
+}
