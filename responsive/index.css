@@ -98,10 +98,6 @@ input {
   margin-inline-end: 2rem;
 }
 
-.richtext {
-  max-width: 600px;
-  margin: auto;
-}
 
 .icon-button {
   display: inline-flex;
@@ -110,7 +106,9 @@ input {
   font-size: 1.5em;
   padding: 0.5em;
   background: #f3f3f3;
-  border: 1px solid red;
+  box-shadow: var(--generic-shadow);
+  margin-block-start: 3rem;
+  margin-block-end: 3rem;
 }
 
 .icon {
